@@ -122,7 +122,7 @@ fn build(src: &Path) {
 }
 
 #[cfg(target_family = "windows")]
-fn build(src: &Path) {
+fn build(src: &std::path::Path) {
     use fs_extra::dir::CopyOptions;
     use std::path::PathBuf;
 
